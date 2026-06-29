@@ -1,11 +1,3 @@
-# memory-mile-tours-travels
+# Memory Mile Tours & Travels Website
 
-🚗 Mumbai to Pune
-
-🚗 Mumbai to Shirdi
-
-🚗 Mumbai to Nashik
-
-✈️ Airport Pickup & Drop
-
-📞 WhatsApp Booking Available
+Ready-to-upload GitHub Pages website.
