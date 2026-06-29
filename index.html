@@ -3,118 +3,206 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Memory Mile Tours & Travels | Panvel Cab Service</title>
-  <meta name="description" content="Memory Mile Tours & Travels offers Ertiga cab booking from Panvel/Navi Mumbai for Mumbai Airport, Pune, Shirdi, Nashik, Lonavala, Mahabaleshwar, corporate and family trips." />
-  <meta name="keywords" content="Panvel cab, Mumbai to Pune taxi, Mumbai to Shirdi cab, Navi Mumbai airport taxi, Ertiga on rent, outstation cab Panvel" />
-  <link rel="stylesheet" href="style.css" />
+  <title>Memory Mile Tours & Travels | Panvel Taxi & Outstation Cab</title>
+  <meta name="description" content="Memory Mile Tours & Travels offers Ertiga, Sedan, Hatchback, SUV, Innova, Tempo Traveller and Mini Bus bookings from Panvel/Navi Mumbai for airport transfers, Mumbai-Pune, Shirdi, Nashik and corporate travel." />
+  <style>
+    :root{
+      --blue:#0b4ea2;
+      --red:#e11d2e;
+      --dark:#0b1220;
+      --light:#f6f8fc;
+      --card:#ffffff;
+      --muted:#5f6b7a;
+      --green:#25D366;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--light);color:var(--dark);line-height:1.6}
+    a{text-decoration:none}
+    .topbar{background:#07152e;color:white;padding:10px 18px;text-align:center;font-size:14px}
+    nav{position:sticky;top:0;background:white;z-index:10;box-shadow:0 2px 12px rgba(0,0,0,.08);padding:14px 18px;display:flex;justify-content:space-between;align-items:center}
+    .brand{font-weight:800;color:var(--blue);font-size:20px}
+    .brand span{color:var(--red)}
+    .navlinks a{color:var(--dark);margin-left:14px;font-weight:600;font-size:14px}
+    .hero{min-height:78vh;background:linear-gradient(135deg,rgba(11,78,162,.92),rgba(7,21,46,.92)),url('ertiga-hero.jpg');background-size:cover;background-position:center;display:flex;align-items:center;color:white;padding:40px 20px}
+    .hero-inner{max-width:1100px;margin:auto;width:100%}
+    .hero h1{font-size:48px;line-height:1.1;margin:0 0 14px}
+    .hero p{font-size:20px;max-width:720px}
+    .btn{display:inline-block;padding:13px 20px;border-radius:999px;font-weight:800;margin:8px 8px 8px 0}
+    .btn-whatsapp{background:var(--green);color:white}
+    .btn-call{background:white;color:var(--blue)}
+    .btn-red{background:var(--red);color:white}
+    section{padding:56px 20px}
+    .container{max-width:1100px;margin:auto}
+    .section-title{text-align:center;margin-bottom:28px}
+    .section-title h2{font-size:34px;color:var(--blue);margin:0}
+    .section-title p{color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:var(--card);padding:22px;border-radius:18px;box-shadow:0 8px 24px rgba(0,0,0,.08)}
+    .card h3{margin-top:0;color:var(--blue)}
+    .badge{display:inline-block;background:#e8f1ff;color:var(--blue);padding:6px 10px;border-radius:999px;font-weight:700;font-size:13px;margin-bottom:10px}
+    .fleet-main{border:2px solid var(--red)}
+    .price{font-size:26px;font-weight:900;color:var(--red)}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .gallery img{width:100%;height:220px;object-fit:cover;border-radius:16px;box-shadow:0 6px 18px rgba(0,0,0,.12)}
+    .cta{background:linear-gradient(135deg,var(--blue),#07152e);color:white;text-align:center;border-radius:24px;padding:34px}
+    .cta h2{margin:0 0 8px;font-size:32px}
+    .contact-box{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    input,select,textarea{width:100%;padding:13px;border:1px solid #d9dee8;border-radius:10px;margin-bottom:12px;font-size:15px}
+    footer{background:#07152e;color:white;text-align:center;padding:28px 20px}
+    .float-wrap{position:fixed;right:16px;bottom:16px;display:flex;flex-direction:column;gap:10px;z-index:20}
+    .float-wrap a{width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:24px;font-weight:900;box-shadow:0 6px 20px rgba(0,0,0,.25)}
+    .wa{background:var(--green)} .call{background:var(--red)}
+    @media(max-width:800px){
+      .hero h1{font-size:34px}
+      .hero p{font-size:17px}
+      .grid,.gallery,.contact-box{grid-template-columns:1fr}
+      .navlinks{display:none}
+      section{padding:42px 16px}
+    }
+  </style>
 </head>
 <body>
-  <header class="topbar">
-    <a class="brand" href="#home"><img src="assets/logo.jpg" alt="Memory Mile Tours & Travels logo"><span>Memory Mile</span></a>
-    <nav><a href="#services">Services</a><a href="#fleet">Fleet</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></nav>
+  <div class="topbar">Panvel • Navi Mumbai • Airport Transfers • Outstation Trips • Corporate Bookings</div>
+  <nav>
+    <div class="brand">Memory Mile <span>Tours & Travels</span></div>
+    <div class="navlinks">
+      <a href="#services">Services</a>
+      <a href="#fleet">Fleet</a>
+      <a href="#pricing">Rates</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <span class="badge">Every Mile, A Memory</span>
+      <h1>Reliable Taxi & Travel Services Across Maharashtra</h1>
+      <p>Book comfortable cabs from Panvel and Navi Mumbai for airport transfers, Mumbai–Pune, Shirdi, Nashik, family tours, weddings and corporate travel.</p>
+      <a class="btn btn-whatsapp" href="https://wa.me/916366006937?text=Hi%20Memory%20Mile%20Tours%20%26%20Travels%2C%20I%20want%20to%20book%20a%20cab.">Book on WhatsApp</a>
+      <a class="btn btn-call" href="tel:+916366006937">Call Now</a>
+      <a class="btn btn-red" href="#pricing">View Starting Rates</a>
+    </div>
   </header>
 
-  <main id="home">
-    <section class="hero">
-      <div class="hero-content">
-        <p class="eyebrow">Panvel • Navi Mumbai • Outstation Trips</p>
-        <h1>Every Mile, A Memory</h1>
-        <p class="sub">Book a clean and comfortable white Ertiga with luggage carrier for family trips, airport transfers, corporate travel and outstation journeys.</p>
-        <div class="actions">
-          <a class="btn primary" href="https://wa.me/916366006937?text=Hi%20Memory%20Mile%20Tours%20%26%20Travels%2C%20I%20want%20to%20book%20a%20cab" target="_blank">Book on WhatsApp</a>
-          <a class="btn secondary" href="tel:+916366006937">Call Now</a>
+  <section id="services">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Services</h2>
+        <p>Local, airport and outstation travel solutions for families, professionals and groups.</p>
+      </div>
+      <div class="grid">
+        <div class="card"><h3>Airport Transfers</h3><p>Panvel, Navi Mumbai and Mumbai airport pickup/drop with clean vehicles and timely service.</p></div>
+        <div class="card"><h3>Outstation Trips</h3><p>Mumbai ⇄ Pune, Shirdi, Nashik, Lonavala, Mahabaleshwar, Alibaug and more.</p></div>
+        <div class="card"><h3>Corporate Travel</h3><p>Regular office trips, client pickup, hotel transfers and monthly business travel requirements.</p></div>
+        <div class="card"><h3>Family Tours</h3><p>Comfortable travel for family vacations, temple visits, weekend trips and long routes.</p></div>
+        <div class="card"><h3>Wedding Transport</h3><p>Cab arrangements for guests, relatives and small/large group movement.</p></div>
+        <div class="card"><h3>Local Taxi</h3><p>Panvel, Kharghar, Kamothe, Belapur, Nerul, Vashi and nearby Navi Mumbai locations.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="fleet">
+    <div class="container">
+      <div class="section-title">
+        <h2>Available Vehicle Categories</h2>
+        <p>Featured vehicle plus other cabs arranged on request through a trusted network.</p>
+      </div>
+      <div class="grid">
+        <div class="card fleet-main"><span class="badge">Featured Vehicle</span><h3>Maruti Ertiga</h3><p>Comfortable 6/7-seater option for family trips, airport transfers and outstation travel.</p></div>
+        <div class="card"><h3>Hatchback</h3><p>Budget-friendly option for city travel and short trips.</p></div>
+        <div class="card"><h3>Sedan</h3><p>Dzire/Amaze/Aura type vehicles available on request for business and family travel.</p></div>
+        <div class="card"><h3>SUV / MUV</h3><p>Spacious vehicles for larger luggage and comfortable long-distance travel.</p></div>
+        <div class="card"><h3>Innova Crysta</h3><p>Premium option for family tours, corporate travel and long routes.</p></div>
+        <div class="card"><h3>Tempo Traveller / Mini Bus</h3><p>For group tours, weddings, corporate events and family functions.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <div class="container">
+      <div class="section-title">
+        <h2>Suggested Starting Rates</h2>
+        <p>Final fare depends on route, vehicle type, tolls, parking, waiting time and trip duration.</p>
+      </div>
+      <div class="grid">
+        <div class="card"><h3>Hatchback</h3><div class="price">₹16/km*</div></div>
+        <div class="card"><h3>Sedan</h3><div class="price">₹18/km*</div></div>
+        <div class="card fleet-main"><h3>Ertiga</h3><div class="price">₹20/km*</div></div>
+        <div class="card"><h3>Innova Crysta</h3><div class="price">₹24/km*</div></div>
+        <div class="card"><h3>Tempo Traveller</h3><div class="price">₹30/km*</div></div>
+        <div class="card"><h3>Airport / Local</h3><div class="price">Quote</div><p>Fixed fare available on WhatsApp.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container cta">
+      <h2>Need a Cab Today?</h2>
+      <p>Send your pickup, drop, date, time and vehicle preference on WhatsApp for a quick quote.</p>
+      <a class="btn btn-whatsapp" href="https://wa.me/916366006937?text=Pickup%3A%20%0ADrop%3A%20%0ADate%3A%20%0ATime%3A%20%0AVehicle%3A%20">Get Instant Quote</a>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <div class="container">
+      <div class="section-title">
+        <h2>Gallery</h2>
+        <p>Real vehicle photos for customer trust.</p>
+      </div>
+      <div class="gallery">
+        <img src="ertiga-hero.jpg" alt="Memory Mile Tours and Travels Ertiga">
+        <img src="ertiga-front.jpg" alt="Ertiga cab booking Panvel">
+        <img src="logo.jpg" alt="Memory Mile Tours and Travels Logo">
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>Contact & Booking</h2>
+        <p>Call or WhatsApp for quick cab booking.</p>
+      </div>
+      <div class="contact-box">
+        <div class="card">
+          <h3>Memory Mile Tours & Travels</h3>
+          <p><b>Phone / WhatsApp:</b> 6366006937</p>
+          <p><b>Location:</b> Panvel, Navi Mumbai</p>
+          <p><b>Service Areas:</b> Mumbai, Navi Mumbai, Pune, Shirdi, Nashik and Maharashtra outstation routes.</p>
+          <a class="btn btn-whatsapp" href="https://wa.me/916366006937">WhatsApp Now</a>
+          <a class="btn btn-red" href="tel:+916366006937">Call Now</a>
+        </div>
+        <div class="card">
+          <h3>Quick Enquiry</h3>
+          <input placeholder="Your Name">
+          <input placeholder="Mobile Number">
+          <input placeholder="Pickup Location">
+          <input placeholder="Drop Location">
+          <select>
+            <option>Select Vehicle</option>
+            <option>Ertiga</option>
+            <option>Hatchback</option>
+            <option>Sedan</option>
+            <option>SUV / MUV</option>
+            <option>Innova Crysta</option>
+            <option>Tempo Traveller</option>
+            <option>Mini Bus</option>
+          </select>
+          <textarea rows="3" placeholder="Trip details"></textarea>
+          <a class="btn btn-whatsapp" href="https://wa.me/916366006937">Submit on WhatsApp</a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="quick-cards">
-      <div><b>24×7</b><span>Booking Support</span></div>
-      <div><b>Ertiga</b><span>With Carrier</span></div>
-      <div><b>Family</b><span>Friendly Travel</span></div>
-      <div><b>Panvel</b><span>Based Service</span></div>
-    </section>
+  <footer>
+    <b>Memory Mile Tours & Travels</b><br>
+    Every Mile, A Memory. | Panvel, Navi Mumbai | WhatsApp: 6366006937
+  </footer>
 
-    <section id="services" class="section">
-      <p class="eyebrow">Our Services</p>
-      <h2>Popular routes and bookings</h2>
-      <div class="grid">
-        <article><h3>Mumbai Airport Transfer</h3><p>Pickup and drop for Mumbai Airport and Navi Mumbai routes.</p></article>
-        <article><h3>Mumbai ⇄ Pune</h3><p>Comfortable outstation ride for family, office and weekend travel.</p></article>
-        <article><h3>Mumbai ⇄ Shirdi</h3><p>Safe devotional trip with luggage space and flexible stops.</p></article>
-        <article><h3>Mumbai ⇄ Nashik</h3><p>Business, family and one-day travel options available.</p></article>
-        <article><h3>Lonavala & Mahabaleshwar</h3><p>Weekend tours with a clean vehicle and planned route support.</p></article>
-        <article><h3>Corporate & Wedding Trips</h3><p>Reliable transport for employees, guests and event travel.</p></article>
-      </div>
-    </section>
-
-    <section id="fleet" class="fleet">
-      <div>
-        <p class="eyebrow">Our Fleet</p>
-        <h2>White Ertiga with luggage carrier</h2>
-        <ul>
-          <li>Clean and comfortable 6/7 seater option</li>
-          <li>Extra carrier for family luggage</li>
-          <li>Ideal for airport and outstation trips</li>
-          <li>Professional and polite travel support</li>
-          <li>UPI / cash payment available</li>
-        </ul>
-      </div>
-      <img src="assets/ertiga-front.jpg" alt="White Ertiga cab for outstation travel">
-    </section>
-
-    <section class="section why">
-      <p class="eyebrow">Why Choose Us</p>
-      <h2>Travel with comfort and confidence</h2>
-      <div class="grid small">
-        <article>✅ On-time pickup</article>
-        <article>✅ Transparent pricing</article>
-        <article>✅ Sanitized vehicle</article>
-        <article>✅ Family friendly</article>
-        <article>✅ Extra luggage carrier</article>
-        <article>✅ Local Panvel service</article>
-      </div>
-    </section>
-
-    <section id="gallery" class="section">
-      <p class="eyebrow">Gallery</p>
-      <h2>Our vehicle</h2>
-      <div class="gallery">
-        <img src="assets/ertiga-hero.jpg" alt="White Ertiga side view">
-        <img src="assets/ertiga-front.jpg" alt="White Ertiga front view">
-      </div>
-    </section>
-
-    <section class="reviews section">
-      <p class="eyebrow">Customer Reviews</p>
-      <h2>What customers can expect</h2>
-      <div class="grid">
-        <article><p>“Clean car, smooth ride and helpful travel support.”</p><b>Family Trip</b></article>
-        <article><p>“Good option for airport pickup and luggage.”</p><b>Airport Transfer</b></article>
-        <article><p>“Comfortable Ertiga for outstation travel.”</p><b>Outstation Booking</b></article>
-      </div>
-    </section>
-
-    <section id="contact" class="contact">
-      <div>
-        <p class="eyebrow">Contact Us</p>
-        <h2>Book your next trip</h2>
-        <p><b>Phone / WhatsApp:</b> <a href="tel:+916366006937">6366006937</a></p>
-        <p><b>Location:</b> Panvel, Navi Mumbai</p>
-        <p><b>Google Maps:</b> <a href="https://share.google/eSum649oDiTZtupLy" target="_blank">Open Memory Mile Tours & Travels</a></p>
-        <div class="actions"><a class="btn primary" href="https://wa.me/916366006937?text=Hi%2C%20I%20want%20cab%20booking%20details" target="_blank">WhatsApp Enquiry</a><a class="btn secondary" href="tel:+916366006937">Call 6366006937</a></div>
-      </div>
-      <form onsubmit="sendWhatsApp(event)">
-        <input id="name" placeholder="Your name" required>
-        <input id="route" placeholder="Route e.g. Panvel to Pune" required>
-        <input id="date" type="date">
-        <textarea id="message" placeholder="Pickup time / luggage / passengers"></textarea>
-        <button class="btn primary" type="submit">Send Enquiry on WhatsApp</button>
-      </form>
-    </section>
-  </main>
-
-  <a class="float-whatsapp" href="https://wa.me/916366006937?text=Hi%20Memory%20Mile%2C%20I%20need%20a%20cab" target="_blank">WhatsApp</a>
-  <footer>© 2026 Memory Mile Tours & Travels. All rights reserved.</footer>
-  <script src="script.js"></script>
+  <div class="float-wrap">
+    <a class="wa" href="https://wa.me/916366006937">☘</a>
+    <a class="call" href="tel:+916366006937">☎</a>
+  </div>
 </body>
 </html>
